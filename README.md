@@ -9,11 +9,13 @@ C++ implementation of Conway's Game of Life, a zero-player game based on the evo
 ## Compilation
 
 To compilate the program, run `make` command:
-	$ make
+
+    $ make
 
 ## Execution
 
 Execute:
+
     $ make run
 
 ### Usage
@@ -23,6 +25,7 @@ Dimensions for the board will be requested by keyboard. With that input, a rando
 ## Cleaning
 
 Run to delete executables and object files:
+
     $ make clean
 
 ## References
