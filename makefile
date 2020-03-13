@@ -1,55 +1,34 @@
-# Compilador C++
 CC=g++
-
-# Flags del Compilador (-g, -std=c++11, -Wall, -Wextra)
 CFLAGS=-g
 
-# ESTRUCTURA CLÁSICA EN UN PROYECTO C++
-# -Proyecto
-#  |-bin       (Ejecutables)
-#  |-build     (Ficheros Objeto)
-#  |-include   (Cabeceras)
-#  |-lib       (Librerías)
-#  |-src       (Código Fuente)
-#  |-tmp       (Ficheros Temporales)
-
-# Directorio de los ejecutables
 BIN_DIR=bin
-# Directorio de los ficheros objeto (.o)
 OBJECTS_DIR=build
-# Directorio del código fuente (.cpp)
 SRC_DIR=src
-# Directorio de las cabeceras (.hpp)
 INCLUDE_DIR=include
 
-# Aquí poner todos los .cpp de tu proyecto cambiando el formato por .o
-_OBJ = Juego.o Tablero.o Celula.o
+_OBJ = Game.o Board.o Cell.o
 OBJ = $(patsubst %,$(OBJECTS_DIR)/%,$(_OBJ))
 
-# Nombre del Ejecutable
-BIN_NAME = Juego
+BIN_NAME = Game
 
-# Target all (lo que se ejecuta cuando haces make)
-all: Juego
+all: $(BIN_DIR)/$(BIN_NAME)
 
-Juego: $(OBJ)
-	$(CC) $(CFLAGS) -o $(BIN_DIR)/$(BIN_NAME) $^
+$(BIN_DIR)/$(BIN_NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $@ $^
 
-$(OBJECTS_DIR)/Celula.o: $(SRC_DIR)/Celula.cpp
+$(OBJECTS_DIR)/Cell.o: $(SRC_DIR)/Cell.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(OBJECTS_DIR)/Tablero.o: $(SRC_DIR)/Tablero.cpp
+$(OBJECTS_DIR)/Board.o: $(SRC_DIR)/Board.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(OBJECTS_DIR)/Juego.o: $(SRC_DIR)/Juego.cpp
+$(OBJECTS_DIR)/Game.o: $(SRC_DIR)/Game.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-# Ejecuta el programa
 .PHONY: run
 run:
 	@./$(BIN_DIR)/$(BIN_NAME)
 
-# Limpia el directorio del proyecto (Borra ejecutables y ficheros objeto)
 .PHONY: clean
 clean:
-	@rm -rf $(BIN_DIR)/* $(OBJECTS_DIR)/*
+	@rm -rf $(BIN_DIR)/$(BIN_NAME) $(OBJECTS_DIR)/*.o
