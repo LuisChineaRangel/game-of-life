@@ -1,34 +1,43 @@
-CC=g++
-CFLAGS=-g
+#################################################
+# MAKEFILE
+#################################################
 
-BIN_DIR=bin
-OBJECTS_DIR=build
-SRC_DIR=src
-INCLUDE_DIR=include
+CXX		 := g++
+CXXFLAGS := -std=c++11
 
-_OBJ = Game.o Board.o Cell.o
-OBJ = $(patsubst %,$(OBJECTS_DIR)/%,$(_OBJ))
+BIN     := bin
+SRC     := src
+BUILD	:= build
+INCLUDE := include
+LIB     := lib
+LIBRARIES   := 
+EXECUTABLE  := GameOfLife
 
-BIN_NAME = Game
+SOURCES := $(wildcard $(SRC)/*.cpp)
+OBJS	:= $(patsubst $(SRC)/%.cpp,$(BUILD)/%.o,$(SOURCES))
 
-all: $(BIN_DIR)/$(BIN_NAME)
+.PHONY: all project run clean
 
-$(BIN_DIR)/$(BIN_NAME): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^
+all: $(BIN)/$(EXECUTABLE)
 
-$(OBJECTS_DIR)/Cell.o: $(SRC_DIR)/Cell.cpp
-	$(CC) $(CFLAGS) -c -o $@ $<
+$(BIN)/$(EXECUTABLE): $(OBJS)
+	@echo "🚧 Building..."
+	$(CXX) -o $@ $(CXXFLAGS) -L$(LIB) $(OBJS)
 
-$(OBJECTS_DIR)/Board.o: $(SRC_DIR)/Board.cpp
-	$(CC) $(CFLAGS) -c -o $@ $<
+$(BUILD)/%.o: $(SRC)/%.cpp
+	@echo "🚧 Building..."
+	$(CXX) -c -o $@ $(CXXFLAGS) $<
 
-$(OBJECTS_DIR)/Game.o: $(SRC_DIR)/Game.cpp
-	$(CC) $(CFLAGS) -c -o $@ $<
+project:
+	clear
+	@echo "📁 Creating Project Structure..."
+	mkdir -p bin build include src
 
-.PHONY: run
 run:
-	@./$(BIN_DIR)/$(BIN_NAME)
+	clear
+	@echo "🚀 Executing..."
+	./$(BIN)/$(EXECUTABLE)
 
-.PHONY: clean
 clean:
-	@rm -rf $(BIN_DIR)/$(BIN_NAME) $(OBJECTS_DIR)/*.o
+	@echo "🧹 Clearing..."
+	rm -f $(BIN)/* $(BUILD)/*

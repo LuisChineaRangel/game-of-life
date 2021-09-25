@@ -1,5 +1,6 @@
-#ifndef CELL_HPP
-#define CELL_HPP
+/// @file cell.hpp
+/// @brief Cell Header
+#pragma once
 
 #include <iostream>
 #include <cassert>
@@ -8,22 +9,35 @@
 
 /// @class Cell
 /// @brief Represents a board cell, surrounded by others, whose state can be alive or dead.
+/// ### Example
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+/// Cell eukaryotic;
+/// eukaryotic.setNeighbords(10);
+/// eukaryotic.setState(false);
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 class Cell {
   private:
-    unsigned int row_, column_;
-    unsigned int neighborsNumber_;
+    // Cell Coordinates
+    unsigned row_, column_;
+    // Nº of Cells surrounding
+    unsigned neighborsNumber_;
+    // Cell State (dead/alive)
     bool state_;
 
   public:
-    Cell(unsigned int = 0, unsigned int = 0);
+    /** @name Constructors and Destructor */
+    /// @{
+    Cell(unsigned = 0, unsigned = 0);
     ~Cell();
+    /// @}
 
-    bool getState() const;
-    bool setState(bool);
-    unsigned int getNeighbords() const;
-    unsigned int setNeighbords(unsigned int);
-
-    friend std::ostream& operator<<(std::ostream&, const Cell&);
+    /** @name Getters and Setters */
+    /// @{
+    bool getState(void) const;
+    void setState(bool);
+    unsigned getNeighbords(void) const;
+    void setNeighbords(unsigned);
+    /// @}
 };
 
-#endif 
+std::ostream& operator<<(std::ostream&, const Cell&);

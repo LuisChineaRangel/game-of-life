@@ -1,4 +1,4 @@
-#include "../include/Board.hpp"
+#include "../include/board.hpp"
 
 /// @brief Board Default Constructor
 Board::Board(unsigned int rowSize, unsigned int columnSize) :
