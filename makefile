@@ -7,11 +7,11 @@ CXXFLAGS := -std=c++11
 
 BIN     := bin
 SRC     := src
-BUILD	:= build
+BUILD		:= build
 INCLUDE := include
 LIB     := lib
-LIBRARIES   := 
-EXECUTABLE  := GameOfLife
+LIBRARIES := 
+EXECUTABLE  := $(notdir $(CURDIR))
 
 SOURCES := $(wildcard $(SRC)/*.cpp)
 OBJS	:= $(patsubst $(SRC)/%.cpp,$(BUILD)/%.o,$(SOURCES))

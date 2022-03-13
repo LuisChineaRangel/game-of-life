@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['board_0',['Board',['../d3/dfd/class_board.html',1,'Board'],['../d3/dfd/class_board.html#ab6440b4d5b49e163d8478d7cb0a76107',1,'Board::Board()']]],
-  ['board_2ecpp_1',['board.cpp',['../df/d6e/board_8cpp.html',1,'']]],
-  ['board_2ehpp_2',['board.hpp',['../de/d71/board_8hpp.html',1,'']]]
+  ['cell_0',['Cell',['../dd/d11/class_cell.html',1,'Cell'],['../dd/d11/class_cell.html#a7799b3ceaca8a38695fbb91563f47b19',1,'Cell::Cell()']]],
+  ['cell_2ecpp_1',['Cell.cpp',['../dd/ddd/_cell_8cpp.html',1,'']]],
+  ['cell_2ehpp_2',['Cell.hpp',['../db/d58/_cell_8hpp.html',1,'']]],
+  ['countneighbors_3',['countNeighbors',['../d3/dfd/class_board.html#adfb873aad8c19ce58e176cf1c5e51ee6',1,'Board']]]
 ];

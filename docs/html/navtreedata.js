@@ -24,21 +24,19 @@
 */
 var NAVTREE =
 [
-  [ "Game of Life", "index.html", [
-    [ "About the Project", "index.html", [
-      [ "Getting Started", "index.html#autotoc_md4", [
-        [ "Written In", "index.html#autotoc_md2", null ],
-        [ "Built With", "index.html#autotoc_md3", null ],
-        [ "Prerequisites", "index.html#autotoc_md5", null ],
-        [ "Download and Installation", "index.html#autotoc_md6", null ]
-      ] ],
-      [ "Usage", "index.html#autotoc_md7", null ],
-      [ "Bugs", "index.html#autotoc_md8", null ],
-      [ "References", "index.html#autotoc_md9", null ],
-      [ "License", "index.html#autotoc_md10", null ],
-      [ "Contact", "index.html#autotoc_md11", null ]
-    ] ],
+  [ "The Game of Life", "index.html", [
     [ "Classes", "annotated.html", [
+      [ "About the Project", "index.html#autotoc_md1", [
+        [ "Written In", "index.html#autotoc_md2", null ]
+      ] ],
+      [ "Getting Started", "index.html#autotoc_md3", [
+        [ "Download and Installation", "index.html#autotoc_md4", null ]
+      ] ],
+      [ "Usage", "index.html#autotoc_md5", null ],
+      [ "Bugs", "index.html#autotoc_md6", null ],
+      [ "References", "index.html#autotoc_md7", null ],
+      [ "License", "index.html#autotoc_md8", null ],
+      [ "Contact", "index.html#autotoc_md9", null ],
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['help_0',['help',['../df/d0a/main_8cpp.html#a0bed8474bd33a912769360766f6b10d4',1,'main.cpp']]]
+  ['long_5foptions_0',['long_options',['../df/d0a/main_8cpp.html#a3ca8454445b0739f5894088d4203319b',1,'main.cpp']]]
 ];

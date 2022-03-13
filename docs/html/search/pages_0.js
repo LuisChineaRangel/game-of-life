@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['about_20the_20project_0',['About the Project',['../index.html',1,'']]]
+  ['the_20game_20of_20life_0',['The Game of Life',['../index.html',1,'']]]
 ];

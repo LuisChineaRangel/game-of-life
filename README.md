@@ -1,17 +1,17 @@
 <br />
 <p align="center">
-  <h3 align="center">Conway's Game Of Life</h3>
+  <h3 align="center">The Game of Life</h3>
 
   <p align="center">
     <br />
-    <a href="https://github.com/LuismGH/GameOfLife"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iluzioDev/game-of-life"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LuismGH/GameOfLife">View Demo</a>
+    <a href="https://github.com/iluzioDev/game-of-life">View Demo</a>
     ·
-    <a href="https://github.com/LuismGH/GameOfLife/issues">Report Bug</a>
+    <a href="https://github.com/iluzioDev/game-of-life/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LuismGH/GameOfLife/issues">Request Feature</a>
+    <a href="https://github.com/iluzioDev/game-of-life/issues">Request Feature</a>
   </p>
 </p>
 
@@ -22,13 +22,11 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#written-in">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#download-and-installation">Installation</a></li>
       </ul>
     </li>
@@ -52,45 +50,33 @@ C++ implementation of Conway's Game of Life, a zero-player game based on the evo
 
 * [C++](https://www.cplusplus.com/)
 
-### Built With
-
-* [VSCode](https://code.visualstudio.com/)
-
 ## Getting Started
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* g++
-  ```sh
-  apt install g++
-  ```
-* make
-  ```sh
-  apt install make
-  ```
 
 ### Download and Installation
 
-Latest release can be found at [here](https://github.com/LuismGH/GameOfLife/releases) as source code.
+Latest release can be found at [here](https://github.com/iluzioDev/game-of-life/releases) as source code.
 
 1. Download latest release
 2. Compile
    ```sh
    make
    ```
-3. Execute
+3. Create your Project Structure
+   ```sh
+   make project
+   ```
+4. Execute
    ```sh
    make run
    ```
-
+   
 ## Usage
 
 Dimensions for the board will be requested by keyboard. With that input, a random cell arrangement will be generated. It is necessary to enter a number of turns to observe and study the board's evolution.
 
 ## Bugs
 
-Please report all bugs [here](https://github.com/LuismGH/GameOfLife/issues). If appropriate, please attach a small test volume which you think GameOfLife isn't handling correctly.
+Please report all bugs [here](https://github.com/iluzioDev/game-of-life/issues). If appropriate, please attach a small test volume which you think GameOfLife isn't handling correctly.
 
 ## References
 
@@ -102,6 +88,6 @@ This program is available as open source under the terms of the [MIT License](ht
 
 ## Contact
 
-Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - alu0101118116@ull.edu.es
+Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - luismarcelochinearangel@gmail.com
 
-Project Link: [https://github.com/LuismGH/GameOfLife](https://github.com/LuismGH/GameOfLife)
+Project Link: [https://github.com/iluzioDev/game-of-life](https://github.com/iluzioDev/game-of-life)
