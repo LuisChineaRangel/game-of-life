@@ -76,7 +76,7 @@ Dimensions for the board will be requested by keyboard. With that input, a rando
 
 ## Bugs
 
-Please report all bugs [here](https://github.com/iluzioDev/game-of-life/issues). If appropriate, please attach a small test volume which you think GameOfLife isn't handling correctly.
+Please report all bugs [here](https://github.com/iluzioDev/game-of-life/issues). If appropriate, please attach a small test volume which you think The Game of Life isn't handling correctly.
 
 ## References
 
