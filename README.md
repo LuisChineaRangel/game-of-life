@@ -88,6 +88,6 @@ This program is available as open source under the terms of the [MIT License](ht
 
 ## Contact
 
-Luis Marcelo Chinea Rangel - [@luismchr_](https://twitter.com/luismchr_) - luismarcelochinearangel@gmail.com
+Luis Marcelo Chinea Rangel - luischinearangel@gmail.com
 
 Project Link: [https://github.com/iluzioDev/game-of-life](https://github.com/iluzioDev/game-of-life)
