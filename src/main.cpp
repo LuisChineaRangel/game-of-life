@@ -5,7 +5,7 @@
 /// in order to display all features of the program
 #include <getopt.h>
 
-#include "../include/Board.hpp"
+#include "../include/board.hpp"
 
 /** @name Main File Functions */
 /// @{
