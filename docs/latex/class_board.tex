@@ -1,0 +1,63 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+Represents a board in the game of life, to study the state of cells.~\newline
+Boards have dead edges to ensure the isolation of cells.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_ab6440b4d5b49e163d8478d7cb0a76107}\label{class_board_ab6440b4d5b49e163d8478d7cb0a76107}} 
+{\bfseries Board} (unsigned=0, unsigned=0)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_board}{Board}} Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_af73f45730119a1fd8f6670f53f959e68}\label{class_board_af73f45730119a1fd8f6670f53f959e68}} 
+{\bfseries $\sim$\+Board} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_board}{Board}} Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_ad3b396070460b0b0bc691c06bc9e6ba2}\label{class_board_ad3b396070460b0b0bc691c06bc9e6ba2}} 
+unsigned {\bfseries get\+Row\+Size} (void) const
+\begin{DoxyCompactList}\small\item\em Row Size Getter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_a4986f306fed4ce8fd64f64af410652cb}\label{class_board_a4986f306fed4ce8fd64f64af410652cb}} 
+unsigned {\bfseries get\+Colum\+Size} (void) const
+\begin{DoxyCompactList}\small\item\em Column Size Getter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Auxiliar Public Functions}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_a3b5b2a03c1036dd6492790617554f73f}\label{class_board_a3b5b2a03c1036dd6492790617554f73f}} 
+void {\bfseries turn} (void)
+\begin{DoxyCompactList}\small\item\em Execute board turns, updating grid\textquotesingle{}s cells state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_adfb873aad8c19ce58e176cf1c5e51ee6}\label{class_board_adfb873aad8c19ce58e176cf1c5e51ee6}} 
+void {\bfseries count\+Neighbors} (void) const
+\begin{DoxyCompactList}\small\item\em Analyzes each cell and counts the living ones around it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_a8592517b1b4ff8bd5fa145919e27dfe2}\label{class_board_a8592517b1b4ff8bd5fa145919e27dfe2}} 
+void {\bfseries update\+Cells} (void)
+\begin{DoxyCompactList}\small\item\em Update Cells state depending on the neighbords of each one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Operator Overloads}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_aa7aa546c55ffd9d4f9524f74c158732c}\label{class_board_aa7aa546c55ffd9d4f9524f74c158732c}} 
+\mbox{\hyperlink{class_cell}{Cell}} \& {\bfseries operator()} (unsigned int, unsigned int) const
+\begin{DoxyCompactList}\small\item\em Parenthesis operator overload. Access a cell from grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a board in the game of life, to study the state of cells.~\newline
+Boards have dead edges to ensure the isolation of cells. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Board.\+hpp\item 
+src/Board.\+cpp\end{DoxyCompactItemize}

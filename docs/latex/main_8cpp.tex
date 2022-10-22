@@ -1,0 +1,79 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Program Main File.  
+
+
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Board.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main Function. Starts Conway\textquotesingle{}s Game of Lige. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Main File Functions}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a0bed8474bd33a912769360766f6b10d4}{help}} (void)
+\begin{DoxyCompactList}\small\item\em User Guide. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a518288848eb2471573b6581060452931}{error}} (void)
+\begin{DoxyCompactList}\small\item\em Error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a3ca8454445b0739f5894088d4203319b}\label{main_8cpp_a3ca8454445b0739f5894088d4203319b}} 
+const option {\bfseries long\+\_\+options} \mbox{[}$\,$\mbox{]} = \{ \{\char`\"{}help\char`\"{}, 0, 0, \textquotesingle{}h\textquotesingle{}\}, \{0, 0, 0, 0\} \}
+\begin{DoxyCompactList}\small\item\em Program Options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program Main File. 
+
+Controls all objects, options, errors and exceptions in order to display all features of the program 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a518288848eb2471573b6581060452931}\label{main_8cpp_a518288848eb2471573b6581060452931}} 
+\index{main.cpp@{main.cpp}!error@{error}}
+\index{error@{error}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily void error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Error message. 
+
+For unknown commands, displays an error message showing information of all possible options \begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a0bed8474bd33a912769360766f6b10d4}\label{main_8cpp_a0bed8474bd33a912769360766f6b10d4}} 
+\index{main.cpp@{main.cpp}!help@{help}}
+\index{help@{help}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+User Guide. 
+
+Shows message explaining all Core Coin features \begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main Function. Starts Conway\textquotesingle{}s Game of Lige. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Argument Counter \\
+\hline
+{\em argv} & Argument Vector \\
+\hline
+\end{DoxyParams}

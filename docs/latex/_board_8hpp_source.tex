@@ -1,0 +1,31 @@
+\hypertarget{_board_8hpp_source}{}\doxysection{Board.\+hpp}
+\label{_board_8hpp_source}\index{include/Board.hpp@{include/Board.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_cell_8hpp}{cell.hpp}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_board}{Board}} \{}
+\DoxyCodeLine{9   \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_cell}{Cell}}*** grid\_;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{unsigned} rowSize\_, columnSize\_;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13   \textcolor{keyword}{public}:}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{17     \mbox{\hyperlink{class_board}{Board}}(\textcolor{keywordtype}{unsigned} = 0, \textcolor{keywordtype}{unsigned} = 0);}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_board_af73f45730119a1fd8f6670f53f959e68}{\string~Board}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{class_board_ad3b396070460b0b0bc691c06bc9e6ba2}{getRowSize}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{24     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{class_board_a4986f306fed4ce8fd64f64af410652cb}{getColumSize}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_a3b5b2a03c1036dd6492790617554f73f}{turn}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_adfb873aad8c19ce58e176cf1c5e51ee6}{countNeighbors}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_a8592517b1b4ff8bd5fa145919e27dfe2}{updateCells}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{36     \mbox{\hyperlink{class_cell}{Cell}}\& \mbox{\hyperlink{class_board_aa7aa546c55ffd9d4f9524f74c158732c}{operator()}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}) \textcolor{keyword}{const};}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 std::ostream\& operator<<(std::ostream\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_board}{Board}}\&);}
+
+\end{DoxyCode}

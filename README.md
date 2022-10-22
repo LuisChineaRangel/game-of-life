@@ -1,93 +1,46 @@
-<br />
-<p align="center">
-  <h3 align="center">The Game of Life</h3>
+# Conway's Game of Life
 
-  <p align="center">
-    <br />
-    <a href="https://github.com/iluzioDev/game-of-life"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/iluzioDev/game-of-life">View Demo</a>
-    ·
-    <a href="https://github.com/iluzioDev/game-of-life/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/iluzioDev/game-of-life/issues">Request Feature</a>
-  </p>
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Twitter](https://img.shields.io/twitter/follow/luctstt.svg?label=Follow&style=social)](https://twitter.com/iluzioDev)
 
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#written-in">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#download-and-installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#bugs">Usage</a></li>
-    <li><a href="#references">References</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+---
 
-## About the Project
+## Features ✨
 
-C++ implementation of Conway's Game of Life, a zero-player game based on the evolution of a set of cells arranged in a grid. This grid has an initial random arrangement of living and dead cells and changes according to two rules:
+* Custom number of cells randomly generated in the sample.
+* Simple and easy to use.
+
+## Install 🔧
+
+```
+git clone https://github.com/iluzioDev/game-of-life
+cd game-of-life
+make
+```
+
+## Usage 💡
+
+Conway's Game of Life is a zero-player game based on the evolution of a set of cells arranged in a grid. This grid has an initial random arrangement of living and dead cells and changes according to two rules:
 
 - Any live cell with two or three neighbors survives.
 - Any dead cell with three live neighbors becomes a live cell.
 - All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
-### Written In
+## Maintainers 👷
 
-* [C++](https://www.cplusplus.com/)
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/iluzioDev"><img src="https://avatars.githubusercontent.com/u/45295283?v=4" width="100px;" alt="IluzioDev"/><br /><sub><b>IluzioDev</b></sub></a><br />💻</td>
+  </tr>
+</table>
 
-## Getting Started
+## License ⚖️
 
-### Download and Installation
+Distributed under the MIT License. [Click here](LICENSE.md) for more information.
 
-Latest release can be found at [here](https://github.com/iluzioDev/game-of-life/releases) as source code.
-
-1. Download latest release
-2. Compile
-   ```sh
-   make
-   ```
-3. Create your Project Structure
-   ```sh
-   make project
-   ```
-4. Execute
-   ```sh
-   make run
-   ```
-   
-## Usage
-
-Dimensions for the board will be requested by keyboard. With that input, a random cell arrangement will be generated. It is necessary to enter a number of turns to observe and study the board's evolution.
-
-## Bugs
-
-Please report all bugs [here](https://github.com/iluzioDev/game-of-life/issues). If appropriate, please attach a small test volume which you think The Game of Life isn't handling correctly.
-
-## References
-
-[Conway's Game of Life | Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-
-## License
-
-This program is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Contact
-
-Luis Marcelo Chinea Rangel - luischinearangel@gmail.com
-
-Project Link: [https://github.com/iluzioDev/game-of-life](https://github.com/iluzioDev/game-of-life)
+---
+<div align="center">
+	<b>
+		<a href="https://www.npmjs.com/package/get-good-readme">File generated with get-good-readme module</a>
+	</b>
+</div>

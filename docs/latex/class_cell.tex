@@ -1,0 +1,137 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+Represents a board cell, surrounded by others, whose state can be alive or dead.  
+
+
+
+
+{\ttfamily \#include $<$Cell.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Constructors and Destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell_a7799b3ceaca8a38695fbb91563f47b19}{Cell}} (unsigned=0, unsigned=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}\label{class_cell_a9fa559f7a28e2b4336c6879ca09304d8}} 
+{\bfseries $\sim$\+Cell} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Getters and Setters}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cell_a2853c54316eb9ff3b4860e3454a0576e}{get\+State}} (void) const
+\begin{DoxyCompactList}\small\item\em State Getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_adc17181480ee0eece1b6e5e34d207dc7}{set\+State}} (bool)
+\begin{DoxyCompactList}\small\item\em State Setter. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{class_cell_a81ca561dbfdbcbc33567c5b099c089c7}{get\+Neighbords}} (void) const
+\begin{DoxyCompactList}\small\item\em Neighbor counter Getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a304a8971fdf5d183d9eab68929065bfb}{set\+Neighbords}} (unsigned)
+\begin{DoxyCompactList}\small\item\em Neighbor counter Setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Represents a board cell, surrounded by others, whose state can be alive or dead. 
+
+\hypertarget{class_cell_autotoc_md8}{}\doxyparagraph{Example}\label{class_cell_autotoc_md8}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_cell}{Cell}} eukaryotic;}
+\DoxyCodeLine{eukaryotic.\mbox{\hyperlink{class_cell_a304a8971fdf5d183d9eab68929065bfb}{setNeighbords}}(10);}
+\DoxyCodeLine{eukaryotic.\mbox{\hyperlink{class_cell_adc17181480ee0eece1b6e5e34d207dc7}{setState}}(\textcolor{keyword}{false});}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_a7799b3ceaca8a38695fbb91563f47b19}\label{class_cell_a7799b3ceaca8a38695fbb91563f47b19}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{unsigned}]{row = {\ttfamily 0},  }\item[{unsigned}]{column = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & \mbox{\hyperlink{class_cell}{Cell}} Coordinate X \\
+\hline
+{\em column} & \mbox{\hyperlink{class_cell}{Cell}} Coordinate Y \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_a81ca561dbfdbcbc33567c5b099c089c7}\label{class_cell_a81ca561dbfdbcbc33567c5b099c089c7}} 
+\index{Cell@{Cell}!getNeighbords@{getNeighbords}}
+\index{getNeighbords@{getNeighbords}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getNeighbords()}{getNeighbords()}}
+{\footnotesize\ttfamily unsigned Cell\+::get\+Neighbords (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Neighbor counter Getter. 
+
+\begin{DoxyReturn}{Returns}
+Nº of Neighbors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a2853c54316eb9ff3b4860e3454a0576e}\label{class_cell_a2853c54316eb9ff3b4860e3454a0576e}} 
+\index{Cell@{Cell}!getState@{getState}}
+\index{getState@{getState}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily bool Cell\+::get\+State (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+State Getter. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_cell}{Cell}} State, true if alive, false if dead 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_a304a8971fdf5d183d9eab68929065bfb}\label{class_cell_a304a8971fdf5d183d9eab68929065bfb}} 
+\index{Cell@{Cell}!setNeighbords@{setNeighbords}}
+\index{setNeighbords@{setNeighbords}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setNeighbords()}{setNeighbords()}}
+{\footnotesize\ttfamily void Cell\+::set\+Neighbords (\begin{DoxyParamCaption}\item[{unsigned}]{neighbors\+Number }\end{DoxyParamCaption})}
+
+
+
+Neighbor counter Setter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neighbors\+Number} & Nº of Neighbors to change \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cell_adc17181480ee0eece1b6e5e34d207dc7}\label{class_cell_adc17181480ee0eece1b6e5e34d207dc7}} 
+\index{Cell@{Cell}!setState@{setState}}
+\index{setState@{setState}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Cell\+::set\+State (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+State Setter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Value of cell to change \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_cell_8hpp}{Cell.\+hpp}}\item 
+src/\mbox{\hyperlink{_cell_8cpp}{Cell.\+cpp}}\end{DoxyCompactItemize}

@@ -1,6 +1,12 @@
-#################################################
-# MAKEFILE
-#################################################
+ifdef OS
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -f
+      FixPath = $1
+   endif
+endif
 
 CXX		 := g++
 CXXFLAGS := -std=c++11
@@ -16,7 +22,7 @@ EXECUTABLE  := $(notdir $(CURDIR))
 SOURCES := $(wildcard $(SRC)/*.cpp)
 OBJS	:= $(patsubst $(SRC)/%.cpp,$(BUILD)/%.o,$(SOURCES))
 
-.PHONY: all project run clean
+.PHONY: all clean
 
 all: $(BIN)/$(EXECUTABLE)
 
@@ -28,16 +34,7 @@ $(BUILD)/%.o: $(SRC)/%.cpp
 	@echo "🚧 Building..."
 	$(CXX) -c -o $@ $(CXXFLAGS) $<
 
-project:
-	clear
-	@echo "📁 Creating Project Structure..."
-	mkdir -p bin build include src
-
-run:
-	clear
-	@echo "🚀 Executing..."
-	./$(BIN)/$(EXECUTABLE)
-
 clean:
 	@echo "🧹 Clearing..."
-	rm -f $(BIN)/* $(BUILD)/*
+	$(RM) $(call FixPath,bin/*)
+	$(RM) $(call FixPath,build/*)
